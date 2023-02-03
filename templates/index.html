@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <title>Email spammer 📨</title>
+
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/index.css" rel="stylesheet">
+        <link href="/static/css/intlTelInput.min.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <main>
+            <h1 class="no-select">Email sender 📨</h1>
+            <form id="main-form">
+                <div class="form-row" style="margin-bottom: 5%"> 
+                    <div class="col">
+                        <label for="theme"></label>
+                        <input class="form-control" id="theme" name="theme" placeholder="Тема сообщений" required type="theme">
+                    </div>
+        
+                    <div class="col">
+                        <label for="text"></label>
+                        <input class="form-control" id="text" name="text" placeholder="Текст сообщений" required type="text">
+                    </div>
+                </div>
+
+                <div class="form-row" style="margin-bottom: 5%"> 
+                    <div class="col">
+                        <input class="form-control" id="email_for_spam" name="email_for_spam" placeholder="Отправитель" required type="email_for_spam">
+                    </div>
+        
+                    <div class="col">
+                        <input class="form-control" id="password" name="password" placeholder="Пароль" required type="password">
+                    </div>
+                </div>
+
+                <div class="form-row" style="margin-bottom: 5%"> 
+                    <div class="col">
+                        <input class="form-control" id="email" name="email" placeholder="Адресат" required type="email">
+                    </div>
+        
+                    <div class="col">
+                        <input class="form-control" id="count" min="1" name="number_of_cycles" placeholder="Количество сообщений"
+                            required type="number">
+                    </div>
+                </div>
+        
+                <button class="btn btn-danger btn-lg" type="submit">Начать</button>
+            </form>
+        </main>
+
+    <script src="/static/js/intlTelInput.min.js"></script>
+    <script src="/static/js/progressbar.min.js"></script>
+    <script src="/static/js/index.js"></script>
+
+    </body>
+</html>
